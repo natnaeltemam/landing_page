@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #30336b;
+  --secondary-color: #be2edd;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.imagna {
+  width: 100px;
+  height: 100px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(26, 20, 20, 0.411);
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+#maintitle {
+  margin: auto;
+}
+#natyman {
+  margin: auto;
+}
+.popup {
+  margin: auto;
+  align-items: center;
+  border: 1px solid rgb(133, 128, 128);
+  border-radius: 5px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.signup {
+  display: flex;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.signup .closebtn {
+  position: absolute;
+  top: 6;
+  right: 100px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff;
+}
+input {
+  inline-size: 300px;
+  height: 30px;
+  margin-top: 5px;
+}
+#intsumbit {
+  margin-top: 10px;
+  inline-size: 100px;
+  border-color: var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+.popsubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.openpop {
+  margin-top: 10px;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+.heading {
+  background-color: var(--primary-color);
+  height: 200px;
+}
