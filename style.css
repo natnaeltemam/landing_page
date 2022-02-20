@@ -137,3 +137,24 @@ input {
   background-color: var(--primary-color);
   height: 200px;
 }
+.myside12 {
+  width: 200px;
+}
+.mainslide12 {
+  margin-left: 200px;
+}
+.statment {
+  margin-left: 250px;
+  margin-right: 200px;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+  .statment {
+    margin: auto;
+  }
+}
